@@ -2381,6 +2381,10 @@
                 document.querySelector('#noteModal .modal-body').appendChild(alertNode);
             }
 
+            // Show label selector in Edit mode
+            const labelSelectorGroup = document.getElementById('labelSelectorGroup');
+            if (labelSelectorGroup) labelSelectorGroup.style.display = 'block';
+
             await fetchLabels(); // Đảm bảo labels được load và render trước khi set checkboxes
 
             // Check các label cũ
@@ -2602,6 +2606,10 @@
                 c.checked = (selectedLabelId !== null && parseInt(c.value) === selectedLabelId);
             });
             document.getElementById('modalTitle').textContent = 'Add note';
+
+            // Hide label selector in Add mode
+            const labelSelectorGroup = document.getElementById('labelSelectorGroup');
+            if (labelSelectorGroup) labelSelectorGroup.style.display = 'none';
 
             const editOnlyFields = document.getElementById('editOnlyFields');
             const lockCheckbox = document.getElementById('isLocked');
