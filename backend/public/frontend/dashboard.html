@@ -2127,7 +2127,12 @@
                 // Show/hide label group based on whether labels exist
                 const labelSelectorGroup = document.getElementById('labelSelectorGroup');
                 if (labelSelectorGroup) {
-                    labelSelectorGroup.style.display = currentLabels.length > 0 ? 'block' : 'none';
+                    const isAddMode = $('#noteModal').hasClass('show') && !document.getElementById('noteId').value;
+                    if (isAddMode) {
+                        labelSelectorGroup.style.display = 'none';
+                    } else {
+                        labelSelectorGroup.style.display = currentLabels.length > 0 ? 'block' : 'none';
+                    }
                 }
             }
 

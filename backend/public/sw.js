@@ -1,4 +1,4 @@
-const CACHE_NAME = 'note-manager-v2';
+const CACHE_NAME = 'note-manager-v3';
 const STATIC_ASSETS = [
     '/frontend/dashboard.html',
     '/frontend/auth.html',
