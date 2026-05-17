@@ -1,4 +1,9 @@
 # 📝 Note Manager
+1/ Lê Quang Tấn - 524H0188
+2/ Hà Nam Anh - 524H0140
+3/ Trần Anh Hào - 524H0153
+
+Truy cập ứng dụng public tại www.notemanage.site
 
 Ứng dụng quản lý ghi chú với khả năng **cộng tác real-time**, **PWA offline**, và **thông báo email tự động**.
 
